@@ -23,14 +23,14 @@ apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7l
 
 # Top Stories:
 # https://developer.nytimes.com/docs/top-stories-product/1/overview
-section = "world"
-URL = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
-res = await fetch(URL)
-json1 = await res.json()
+#section = "world"
+#URL = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
+#res = await fetch(URL)
+#json1 = await res.json()
 
 
-print(json1.results[2].abstract)
-print(json1.num_results)
+pprint(apikey)
+
 
 
 
