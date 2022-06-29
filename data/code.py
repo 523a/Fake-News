@@ -56,5 +56,6 @@ from sklearn.externals import joblib
 LR = LogisticRegression()
 filename = 'LR2_model.sav'
 joblib.dump(LR, filename)
-print("All Ok 4 !")
+
+print("All Ok 5 !")
 
