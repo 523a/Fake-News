@@ -46,16 +46,10 @@ joblib.dump(LR, filename)
 
 
 ########################################
-csv_content = js.csvContent
 
-reader = csv.DictReader(io.StringIO(csv_content))
-headers = []
-rows = []
-
-headers = reader.fieldnames
-for line in reader:
-    rows.append(line)
+from pyodide.http import open_url
 
 
-print("All Ok 7 !")
+
+print("All Ok 8 !")
 
