@@ -46,8 +46,8 @@ joblib.dump(LR, filename)
 
 
 ########################################
-import altair as alt
-import panel as pn
+#import altair as alt
+#import panel as pn
 from pyodide.http import open_url
 
 url = 'https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-28/penguins.csv'
