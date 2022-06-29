@@ -18,6 +18,6 @@ import sklearn
 from js import fetch
 import os
 #lt = pd.read_csv("lt.csv", names=columns)
-
+print("os.getcwd()")
 
 print("All Ok 1 !")
