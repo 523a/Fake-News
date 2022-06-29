@@ -57,7 +57,5 @@ for line in reader:
     rows.append(line)
 
 
-
-
 print("All Ok 7 !")
 
