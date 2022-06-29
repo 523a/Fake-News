@@ -19,7 +19,7 @@ from js import fetch
 import os
 from pprint import pprint
 import json
-apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7lNSCGfGs8')
+#apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7lNSCGfGs8')
 
 # Top Stories:
 # https://developer.nytimes.com/docs/top-stories-product/1/overview
