@@ -20,4 +20,4 @@ import os
 lt = pd.read_csv("lt.csv", names=columns)
 
 
-print("All Ok!")
+print("All Ok 1 !")
