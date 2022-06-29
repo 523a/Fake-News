@@ -31,7 +31,7 @@ with myFile:
     writer = csv.writer(myFile)
     writer.writerows(myData)
      
-print("Writing complete")
+print("Writing complete 1")
 
 
 from sklearn.linear_model import LogisticRegression
