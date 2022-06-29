@@ -33,25 +33,8 @@ with myFile:
      
 print("Writing complete")
 
-import sys
-import js
-import json
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.datasets import load_iris
-from sklearn.svm import LinearSVC
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import classification_report
-from sklearn.feature_extraction.text import TfidfVectorizer
+
 from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.externals import joblib
-
-
-
 
 LR = LogisticRegression()
 filename = 'LR2_model.sav'
