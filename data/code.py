@@ -26,7 +26,7 @@ myData = [["first_name", "second_name", "Grade"],
           ['Alex', 'Brian', 'A'],
           ['Tom', 'Smith', 'B']]
  
-myFile = open('ex.csv', 'w')
+myFile = open('ex1.csv', 'w')
 with myFile:
     writer = csv.writer(myFile)
     writer.writerows(myData)
