@@ -40,5 +40,23 @@ LR = LogisticRegression()
 filename = 'LR2_model.sav'
 joblib.dump(LR, filename)
 
-print("All Ok 5 !")
+
+import io
+import csv
+import js
+
+csv_content = js.csvContent
+
+reader = csv.DictReader(io.StringIO(csv_content))
+headers = []
+rows = []
+
+headers = reader.fieldnames
+for line in reader:
+    rows.append(line)
+
+
+
+
+print("All Ok 6 !")
 
