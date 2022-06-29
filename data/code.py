@@ -14,13 +14,16 @@ import string
 import joblib
 import sklearn
 
+import csv
+import io
+import js
 
 from js import fetch
 import os
 #lt = pd.read_csv("lt.csv", names=columns)
 print(os.getcwd())
 
-import csv
+
  
 myData = [["first_name", "second_name", "Grade"],
           ['Alex', 'Brian', 'A'],
@@ -31,7 +34,7 @@ with myFile:
     writer = csv.writer(myFile)
     writer.writerows(myData)
      
-print("Writing complete 1")
+print("Writing complete 2")
 
 
 from sklearn.linear_model import LogisticRegression
@@ -41,10 +44,8 @@ filename = 'LR2_model.sav'
 joblib.dump(LR, filename)
 
 
-import io
-import csv
-import js
 
+########################################
 csv_content = js.csvContent
 
 reader = csv.DictReader(io.StringIO(csv_content))
@@ -58,5 +59,5 @@ for line in reader:
 
 
 
-print("All Ok 6 !")
+print("All Ok 7 !")
 
