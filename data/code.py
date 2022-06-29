@@ -29,8 +29,8 @@ res = await fetch(URL)
 json1 = await res.json()
 
 
-pprint(json1.results[2].abstract)
-pprint(json1.num_results)
+print(json1.results[2].abstract)
+print(json1.num_results)
 
 
 
