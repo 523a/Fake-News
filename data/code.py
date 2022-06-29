@@ -17,8 +17,7 @@ import sklearn
 
 from js import fetch
 import os
-from pprint import pprint
-import json
+
 #apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7lNSCGfGs8')
 
 # Top Stories:
@@ -27,11 +26,6 @@ import json
 #URL = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
 #res = await fetch(URL)
 #json1 = await res.json()
-
-
-pprint(apikey)
-
-
 
 
 print("All Ok!")
