@@ -103,7 +103,7 @@ def manual_testing(news1):
     pred_LR = LR.predict(new_xv_test)
 
 
-    return print("\n\nLR Prediction: {} \nDT Prediction: {} \nGBC Prediction: {} \nRFC Prediction: {}".format(output_lable(pred_LR[0])))
+    return print("\n\nLR Prediction: {}".format(output_lable(pred_LR[0])))
 
 
 
