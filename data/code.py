@@ -56,8 +56,8 @@ joblib.dump(LR, filename)
 #import panel as pn
 from pyodide.http import open_url
 
-url = 'https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-28/penguins.csv'
-penguins = pd.read_csv(open_url(url)).dropna()
+url = 'https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv'
+lt1 = pd.read_csv(open_url(url)).dropna()
 
 
 
