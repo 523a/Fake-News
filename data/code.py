@@ -116,12 +116,13 @@ apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7l
 # Top Stories:
 # https://developer.nytimes.com/docs/top-stories-product/1/overview
 section = "world"
-URL = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
-json1 = fetch(URL).json()
+URL4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
+
+json1 = json.loads(open_url(url4).read().decode("utf-8"))
 
 pprint(json1.results[2].abstract)
 pprint(json1.num_results)
 #lt3 = pd.read_csv(open_url(url3))
-
+#json1 = fetch(URL).json()
 print("All Ok 9 !")
 
