@@ -116,7 +116,8 @@ apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7l
 # Top Stories:
 # https://developer.nytimes.com/docs/top-stories-product/1/overview
 section = "world"
-URL4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
+
+url4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
 
 json1 = json.loads(open_url(url4).json().decode("utf-8"))
 
