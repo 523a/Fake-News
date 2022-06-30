@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://cdn.jsdelivr.net/pyodide/v0.20.0/full/pyodide.js"></script>
+  </head>
+  <body>
+    Pyodide test page <br>
+    Open your browser console to see Pyodide output
+    <script type="text/javascript">
+      async function main(){
+        let pyodide = await loadPyodide();
+		await pyodide.loadPackage("scikit-learn");
+		await pyodide.loadPackage("pandas");
+        // sklearn is now available
+        console.log(pyodide.runPython(`
+            print("It\'s Ok?")
+            
+        `));
+		pyodide.runPython(await (await fetch("https://raw.githubusercontent.com/523a/Fake-News/main/data/code.py")).text());
+      }
+      main();
+    </script>
+  </body>
+</html>
