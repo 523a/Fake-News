@@ -1,7 +1,9 @@
-print("1")
+
 import io
 import csv
 import js
+print("1")
+
 
 csv_content = js.csvContent
 
