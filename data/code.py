@@ -1,5 +1,4 @@
 import pandas as pd
-'''
 import numpy as np
 from js import fetch
 from sklearn.model_selection import train_test_split
@@ -14,35 +13,36 @@ import re
 import string
 import joblib
 import sklearn
-'''
 import csv
 import io
 import js
 import os
 
-from js import fetch
+################ LOAD
+################
+
+from pyodide.http import open_url
+
+url1 = 'https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv'
+lt1 = pd.read_csv(open_url(url1)).dropna()
+url2 = 'https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv'
+lt2 = pd.read_csv(open_url(url2)).dropna()
+url3 = 'https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv'
+lt3 = pd.read_csv(open_url(url3)).dropna()
+
+lt = lt1.append(lt2, ignore_index=True) 
+lt = lt.append(lt3, ignore_index=True) 
 
 
-#lt = pd.read_csv("lt.csv", names=columns)
-print(os.getcwd())
+
+
+
+
 
 
  
-myData = [["first_name", "second_name", "Grade"],
-          ['Alex', 'Brian', 'A'],
-          ['Tom', 'Smith', 'B']]
- 
-myFile = open('ex1.csv', 'w')
-with myFile:
-    writer = csv.writer(myFile)
-    writer.writerows(myData)
 
-lt = pd.read_csv("ex1.csv")
-print(lt)
-
-print("Writing complete 4")
-
-import joblib
+###############  LR
 from sklearn.linear_model import LogisticRegression
 
 LR = LogisticRegression()
@@ -51,14 +51,6 @@ joblib.dump(LR, filename)
 
 
 
-########################################
-#import altair as alt
-#import panel as pn
-from pyodide.http import open_url
-
-url = 'https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv'
-lt1 = pd.read_csv(open_url(url)).dropna()
-print (lt1)
 
 
 print("All Ok 9 !")
