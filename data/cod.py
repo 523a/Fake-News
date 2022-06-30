@@ -6,16 +6,19 @@ import js
 from js import fetch
 URL ="https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv"
 
-res = fetch(URL)
-print("1")
-text = res.text()
-filename = 'lt1.csv'
-print("-2-")
-with open(filename, 'w') as f:
-    f.write(text)
+myData = [["first_name", "second_name", "Grade"],
+          ['Alex', 'Brian', 'A'],
+          ['Tom', 'Smith', 'B']]
+ 
+myFile = open('ex1.csv', 'w')
+with myFile:
+    writer = csv.writer(myFile)
+    writer.writerows(myData)
 
-lt1 = pd.read_csv(filename)
+lt = pd.read_csv("ex1.csv")
+print(lt)
 
+print("Writing complete 4")
 
 
 '''csv_content = js.csvContent
