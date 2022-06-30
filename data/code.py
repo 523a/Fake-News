@@ -37,7 +37,7 @@ with myFile:
     writer = csv.writer(myFile)
     writer.writerows(myData)
 
-lt = pd.read_csv("ex1.csv", names=columns)
+lt = pd.read_csv("ex1.csv")
 print(lt)
 
 print("Writing complete 4")
