@@ -1,5 +1,6 @@
-import numpy as np
 import pandas as pd
+'''
+import numpy as np
 from js import fetch
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
@@ -13,13 +14,15 @@ import re
 import string
 import joblib
 import sklearn
-
+'''
 import csv
 import io
 import js
+import os
 
 from js import fetch
-import os
+
+
 #lt = pd.read_csv("lt.csv", names=columns)
 print(os.getcwd())
 
@@ -33,7 +36,10 @@ myFile = open('ex1.csv', 'w')
 with myFile:
     writer = csv.writer(myFile)
     writer.writerows(myData)
-     
+
+lt = pd.read_csv("ex1.csv", names=columns)
+print(lt)
+
 print("Writing complete 4")
 
 
