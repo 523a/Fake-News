@@ -58,7 +58,7 @@ from pyodide.http import open_url
 
 url = 'https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv'
 lt1 = pd.read_csv(open_url(url)).dropna()
-
+print (lt1)
 
 
 print("All Ok 9 !")
