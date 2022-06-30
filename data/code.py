@@ -58,7 +58,6 @@ from pyodide.http import open_url
 
 url = 'https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-28/penguins.csv'
 penguins = pd.read_csv(open_url(url)).dropna()
-cols = list(penguins.columns)[2:6]
 
 
 
