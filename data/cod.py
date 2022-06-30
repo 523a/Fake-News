@@ -8,7 +8,7 @@ URL =f"https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv"
 
 res = fetch(URL)
 print("1")
-text = await res.text()
+text = res.text()
 filename = 'lt1.csv'
 print("-2-")
 with open(filename, 'w') as f:
