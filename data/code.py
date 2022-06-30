@@ -88,8 +88,40 @@ LR.score(xv_test, y_test)
 print(classification_report(y_test, pred_lr))
 
 
+def output_lable(n):
+    if n == 0:
+        return "Fake News"
+    elif n == 1:
+        return "Not A Fake News"
+    
+def manual_testing(news1):
+    testing_news = {"text":[news1]}
+    new_def_test = pd.DataFrame(testing_news)
+    new_def_test["text"] = new_def_test["text"].apply(wordopt) 
+    new_x_test = new_def_test["text"]
+    new_xv_test = vectorization.transform(new_x_test)
+    pred_LR = LR.predict(new_xv_test)
 
 
+    return print("\n\nLR Prediction: {} \nDT Prediction: {} \nGBC Prediction: {} \nRFC Prediction: {}".format(output_lable(pred_LR[0])))
+
+
+
+
+import os
+from pprint import pprint
+import json
+apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7lNSCGfGs8')
+
+# Top Stories:
+# https://developer.nytimes.com/docs/top-stories-product/1/overview
+section = "world"
+URL = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
+json1 = fetch(URL).json()
+
+pprint(json1.results[2].abstract)
+pprint(json1.num_results)
+#lt3 = pd.read_csv(open_url(url3))
 
 print("All Ok 9 !")
 
