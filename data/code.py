@@ -33,8 +33,29 @@ lt3 = pd.read_csv(open_url(url3)).dropna()
 lt = lt1.append(lt2, ignore_index=True) 
 lt = lt.append(lt3, ignore_index=True) 
 
+def clean_dataset(df):
+    assert isinstance(df, pd.DataFrame), "df needs to be a pd.DataFrame"
+    df.dropna(inplace=True)
+    indices_to_keep = ~df.isin([np.nan, np.inf, -np.inf]).any(1)
+    return df[indices_to_keep]#.astype(np.float64)
 
+def wordopt(text):
+    text = text.lower()
+    text = re.sub('\[.*?\]', '', text)
+    text = re.sub("\\W"," ",text) 
+    text = re.sub('https?://\S+|www\.\S+', '', text)
+    text = re.sub('<.*?>+', '', text)
+    text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
+    text = re.sub('\n', '', text)
+    text = re.sub('\w*\d\w*', '', text)    
+    return text
+   
+   
+lt=clean_dataset(lt)
+lt.replace([np.inf, -np.inf], np.nan, inplace=True)
 
+lt.dropna()
+lt.to_csv('lt.csv', index=False) 
 
 
 
