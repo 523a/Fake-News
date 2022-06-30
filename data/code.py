@@ -42,7 +42,7 @@ print(lt)
 
 print("Writing complete 4")
 
-
+import joblib
 from sklearn.linear_model import LogisticRegression
 
 LR = LogisticRegression()
