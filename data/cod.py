@@ -21,11 +21,10 @@ print(url4)
 
 json1 = json.load(open_url(url4))
 
-pprint(json1.results[2].abstract)
-pprint(json1.num_results)
+pprint(json1['results'][35]['abstract'])
+pprint(json1['num_results'])
 
-#lt3 = pd.read_csv(open_url(url3))
-#json1 = fetch(URL).json()
+
 
 print("All Ok 9 !")
 
