@@ -57,18 +57,35 @@ lt.replace([np.inf, -np.inf], np.nan, inplace=True)
 lt.dropna()
 lt.to_csv('lt.csv', index=False) 
 
+x = lt["text"]
+y = lt["class"]
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25)
 
+from sklearn.feature_extraction.text import TfidfVectorizer
 
+vectorization = TfidfVectorizer()
+xv_train = vectorization.fit_transform(x_train)
+xv_test = vectorization.transform(x_test)
 
-
- 
 
 ###############  LR
 from sklearn.linear_model import LogisticRegression
 
 LR = LogisticRegression()
-filename = 'LR2_model.sav'
+LR.fit(xv_train,y_train)
+
+filename = 'LR_model.sav'
 joblib.dump(LR, filename)
+
+# load the model from disk
+loaded_model = joblib.load(filename)
+result = loaded_model.score(xv_test, y_test)
+print(result)
+
+pred_lr=LR.predict(xv_test)
+LR.score(xv_test, y_test)
+
+print(classification_report(y_test, pred_lr))
 
 
 
