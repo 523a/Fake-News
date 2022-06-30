@@ -6,7 +6,7 @@ import js
 from js import fetch
 URL =f"https://raw.githubusercontent.com/523a/Fake-News/main/data/lt1.csv"
 
-res = await fetch(URL)
+res = fetch(URL)
 print("1")
 text = await res.text()
 filename = 'lt1.csv'
