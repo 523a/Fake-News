@@ -19,7 +19,7 @@ section = "world"
 url4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
 print(url4)
 
-json1 = json.(open_url(url4))
+json1 = json.load(open_url(url4))
 
 pprint(json1.results[2].abstract)
 pprint(json1.num_results)
