@@ -125,7 +125,7 @@ pprint(json1['results'][35]['abstract'])
 pprint(json1['num_results'])
 
 i=0
-while i < json1["num_results"]:
+while i < (json1["num_results"] - 1):
     nnn = json1["results"][i]["abstract"]
     
     print(manual_testing(nnn),i)
