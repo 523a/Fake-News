@@ -1,2 +1,2 @@
 # Fake-News
-Based for using pyodide and sickit-learn
+Based for using pyodide and scikit-learn
