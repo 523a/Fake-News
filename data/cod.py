@@ -30,7 +30,7 @@ i=0
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
     
-    print((nnn),i)
+    #print((nnn),i)
     i=i+1
 
 print("All Ok 9 !")
