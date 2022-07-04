@@ -9,6 +9,7 @@ import os
 from pprint import pprint
 import json
 
+r=int(50)
 
 apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7lNSCGfGs8')
 
@@ -24,7 +25,7 @@ json1 = json.load(open_url(url4))
 nn=json1["results"][1]["abstract"]
 print(nn)
 print(json1['num_results'])
-r=int(50)
+
 print(r)
 i=0
 while i < json1["num_results"]:
