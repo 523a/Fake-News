@@ -24,7 +24,7 @@ json1 = json.load(open_url(url4))
 nn=json1["results"][1]["abstract"]
 print(nn)
 print(json1['num_results'])
-r=5
+r=int(50)
 print(r)
 i=0
 while i < json1["num_results"]:
