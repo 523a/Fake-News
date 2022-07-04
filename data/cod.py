@@ -22,8 +22,8 @@ print(url4)
 json1 = json.load(open_url(url4))
 
 nn=json1['results'][1]['abstract']
-print(nn)
-print(json1['num_results'])
+pprint(nn)
+pprint(json1['num_results'])
 
 i=0
 while i < json1["num_results"]:
