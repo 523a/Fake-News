@@ -37,4 +37,3 @@ while i < json1["num_results"]:
 print("All Ok 9 !")
 
 
-
