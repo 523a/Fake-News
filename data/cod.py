@@ -26,13 +26,12 @@ print(url4)
 
 json1 = json.load(open_url(url4))
 
-#nn=json1["results"][1]["abstract"]
+nn=json1["results"][0]["abstract"]
 #print(nn)
 #print(json1['num_results'])
 print("#########################  1 #################################")
 
 i=0
-пп=[]
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
     nn=nn+"<p>"+nnn+str(i)+"</p>"+"<br>"
