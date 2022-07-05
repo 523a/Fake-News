@@ -39,10 +39,11 @@ while i < json1["num_results"]:
     nn=nn+"<p>"+nnn+str(i)+"</p>"+"<br>"
    
     
-    print((nn))
+    
     i=i+1
 
 print("All Ok 9 !")
+print((nn))
 
 #div2 = js.document.createElement("div")
 #div2.innerHTML(nn)
