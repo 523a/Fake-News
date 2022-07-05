@@ -2,7 +2,11 @@
 import io
 import csv
 import js
+import js
 
+div = js.document.createElement("div")
+div.innerHTML = "<h1>This element was created from Python</h1>"
+js.document.body.prepend(div)
 
 from pyodide.http import open_url
 import os
