@@ -5,9 +5,9 @@ import csv
 import js
 import js
 
-div = js.document.createElement("div")
-div.innerHTML = "<h1> This element WAS from Python </h1>"
-js.document.body.prepend(div)
+div1 = js.document.createElement("div")
+div1.innerHTML = "<h1> This element WAS from Python </h1>"
+js.document.body.prepend(div1)
 
 from pyodide.http import open_url
 import os
@@ -33,12 +33,12 @@ print(json1['num_results'])
 i=0
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    div.innerHTML = "<p>"+nnn+"</p>"
-    js.document.body.prepend(div)
+    div.innerHTML.append( "<p>"+nnn+"</p>+<br>")
+    #js.document.body.prepend(div)
     
     print((nnn),i)
     i=i+1
 
 print("All Ok 9 !")
-
+js.document.body.prepend(div)
 
