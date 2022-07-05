@@ -35,8 +35,8 @@ print(r)
 i=0
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    div.innerHTML = "<p>"+nnn+"</p>"
-    js.document.body.prepend(div)
+    #div.innerHTML = "<p>"+nnn+"</p>"
+    #js.document.body.prepend(div)
     
     print((nnn),i)
     i=i+1
