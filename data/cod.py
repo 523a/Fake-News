@@ -35,7 +35,7 @@ i=0
 пп=[]
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn=nn+"<p>"+nnn+i+"</p>"+"<br>"
+    nn=nn+"<p>"+nnn+str(i)+"</p>"+"<br>"
    
     
     print((nn))
