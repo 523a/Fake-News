@@ -35,15 +35,15 @@ i=0
 пп=[]
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn=nn+"<p>"+nnn+"</p>+<br>"
+    nn=nn+"<p>"+nnn+i+"</p>"+"<br>"
    
     
-    print((nnn),i)
+    print((nn))
     i=i+1
 
 print("All Ok 9 !")
 
 div2 = js.document.createElement("div")
-div2.innerHTML( "<p>"+nn+"</p>+<br>")
+div2.innerHTML(nn)
 js.document.body.prepend(div2)
 
