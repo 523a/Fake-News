@@ -27,9 +27,10 @@ print(url4)
 json1 = json.load(open_url(url4))
 
 nn=json1["results"][1]["abstract"]
+
 print(nn)
 print(json1['num_results'])
-
+print("****************** 1 *****************************)
 
 i=0
 пп=[]
@@ -43,9 +44,9 @@ while i < json1["num_results"]:
 
 print("All Ok 9 !")
 
-div2 = js.document.createElement("div")
-div2.innerHTML(nn)
-js.document.body.prepend(div2)
+#div2 = js.document.createElement("div")
+#div2.innerHTML(nn)
+#js.document.body.prepend(div2)
 
 
 
