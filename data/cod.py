@@ -45,9 +45,9 @@ while i < json1["num_results"]:
 print("All Ok 9 !")
 print((nn))
 
-#div2 = js.document.createElement("div")
-#div2.innerHTML(nn)
-#js.document.body.prepend(div2)
+div2 = js.document.createElement("div")
+div2.innerHTML(nn)
+js.document.body.prepend(div2)
 
 
 
