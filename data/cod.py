@@ -30,20 +30,20 @@ nn=json1["results"][1]["abstract"]
 print(nn)
 print(json1['num_results'])
 
-div2 = js.document.createElement("div")
+
 i=0
 пп=[]
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn.append(nnn)
-    #div2.innerHTML( "<p>"+nnn+"</p>+<br>")
-    #js.document.body.prepend(div)
+    nn=nn+"<p>"+nnn+"</p>+<br>"
+   
     
     print((nnn),i)
     i=i+1
 
 print("All Ok 9 !")
 
+div2 = js.document.createElement("div")
 div2.innerHTML( "<p>"+nn+"</p>+<br>")
 js.document.body.prepend(div2)
 
