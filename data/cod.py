@@ -6,7 +6,7 @@ import js
 import js
 
 div = js.document.createElement("div")
-div.innerHTML = "<h1> This element was with Python </h1>"
+div.innerHTML = "<h1> This element WAS from Python </h1>"
 js.document.body.prepend(div)
 
 from pyodide.http import open_url
