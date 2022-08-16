@@ -46,5 +46,12 @@ div2 = js.document.createElement("div")
 div2.innerHTML = nn
 js.document.body.prepend(div2)
 
+div3 = js.document.createElement("div")
+
+div3.style.backgroundColor="red"
+
+js.document.body.append(div3)
+
+div3.innerText="fgdfgdfgdfsgds"
 
 
