@@ -48,7 +48,7 @@ js.document.body.prepend(div2)
 
 div3 = js.document.createElement("div")
 
-div3.style.backgroundColor="red"
+div3.style.backgroundColor="green"
 
 js.document.body.append(div3)
 
