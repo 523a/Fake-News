@@ -52,6 +52,6 @@ div3.style.backgroundColor="red"
 
 js.document.body.append(div3)
 
-div3.innerText="fgdfgdfgdfsgds"
+div3.innerText="Какая-то строка"
 
 
