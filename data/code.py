@@ -116,16 +116,14 @@ apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7l
 # Top Stories:
 # https://developer.nytimes.com/docs/top-stories-product/1/overview
 section = "world"
-
 url4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
-
 json1 = json.load(open_url(url4))
 nn="NEWS"
 
 i=0
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn=nn+"<p>"+nnn+"</p>"+"<br>"
+    nn = nn+"<p>"+nnn+"</p>"+"<br>"
     print(nn)
     #print(manual_testing(nnn),i,nnn)
     i=i+1
