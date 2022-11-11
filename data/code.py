@@ -123,8 +123,8 @@ nn="NEWS"
 i=0
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn = nn+"<p>"+nnn+"</p>"+"<br>"
-    print(nn)
+    nn = nn+"<p>"+i+manual_testing(nnn)+nnn+"</p>"+"<br>"
+    #print(nn)
     #print(manual_testing(nnn),i,nnn)
     i=i+1
     
