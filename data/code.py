@@ -80,12 +80,12 @@ joblib.dump(LR, filename)
 # load the model from disk
 loaded_model = joblib.load(filename)
 result = loaded_model.score(xv_test, y_test)
-print(result)
+#print(result)
 
 pred_lr=LR.predict(xv_test)
 LR.score(xv_test, y_test)
 
-print(classification_report(y_test, pred_lr))
+#print(classification_report(y_test, pred_lr))
 
 
 def output_lable(n):
