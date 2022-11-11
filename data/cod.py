@@ -25,7 +25,7 @@ print(url4)
 
 json1 = json.load(open_url(url4))
 
-
+print(json1)
 nn="NEWS"
 #nn=json1["results"][0]["abstract"]
 #print(nn)
