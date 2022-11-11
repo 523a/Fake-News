@@ -34,7 +34,7 @@ nn="Hello"
 #print(json1['num_results'])
 print("#########################  1 #################################")
 
-i=0
+i=1
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
     nn = nn+nnn 
