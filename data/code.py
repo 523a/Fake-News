@@ -103,7 +103,7 @@ def manual_testing(news1):
     pred_LR = LR.predict(new_xv_test)
 
 
-    return print("\n\nLR Prediction: {}".format(output_lable(pred_LR[0])))
+    return print("\n\n LR Prediction: {}".format(output_lable(pred_LR[0])))
 
 
 
@@ -123,12 +123,12 @@ nn="NEWS"
 i=0
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn = nn+"<p>"+str(i)+str(manual_testing(nnn))+nnn+"</p>"+"<br>"
-    #print(nn)
+    nn = nn+"<p>"+str(i)+nnn+"</p>"+"<br>"
+    print(str(manual_testing(nnn)))
     #print(manual_testing(nnn),i,nnn)
     i=i+1
     
-    
+#str(manual_testing(nnn))   
     
 print("All Ok 9 !")
 
