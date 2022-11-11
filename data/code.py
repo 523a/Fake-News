@@ -125,7 +125,7 @@ while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
     nn = nn + str(i) + "\n" + nnn + "\n"+ manual_testing(nnn)+ "\n\n"
     #nn = nn+"<p>" + str(i) + "<br>" + nnn + "<br> "+ manual_testing(nnn)+ "</p>"+"<br>"
-    print(str(manual_testing(nnn)))
+    #print(str(manual_testing(nnn)))
     #print(manual_testing(nnn),i,nnn)
     i=i+1
 print(nn) 
