@@ -123,15 +123,14 @@ nn="NEWS"
 i=1
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn = nn+"<p>" + str(i) + "<br>" + nnn + "<br> "+ manual_testing(nnn)+ "</p>"+"<br>"
+    nn = nn + str(i) + "\n" + nnn + "\n"+ manual_testing(nnn)+ "\n\n"
+    #nn = nn+"<p>" + str(i) + "<br>" + nnn + "<br> "+ manual_testing(nnn)+ "</p>"+"<br>"
     print(str(manual_testing(nnn)))
     #print(manual_testing(nnn),i,nnn)
     i=i+1
-    
-#str(manual_testing(nnn))   
-    
-print("All Ok 9 !")
+print("nn") 
 
-div2 = js.document.createElement("div")
-div2.innerHTML = nn
-js.document.body.prepend(div2)
+#str(manual_testing(nnn))   
+#div2 = js.document.createElement("div")
+#div2.innerHTML = nn
+#js.document.body.prepend(div2)
