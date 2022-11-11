@@ -125,12 +125,13 @@ json1 = json.load(open_url(url4))
 i=0
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn=manual_testing(nnn),i,nnn
+    nn=nn+"<p>"+nnn+"</p>"+"<br>"
     print(nn)
     #print(manual_testing(nnn),i,nnn)
     i=i+1
     
-
+    
+    
 print("All Ok 9 !")
 
 div2 = js.document.createElement("div")
