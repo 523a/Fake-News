@@ -43,10 +43,9 @@ while i < json1["num_results"]:
 
 with open('FN.json', 'w') as f:
     json.dump(nn, f)
-    
+print((nn))   
     
 #print("All Ok 9 !")
-#print((nn))
 #div2 = js.document.createElement("div")
 #div2.innerHTML = nn
 #js.document.body.prepend(div2)
