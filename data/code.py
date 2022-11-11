@@ -120,7 +120,7 @@ url4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apike
 json1 = json.load(open_url(url4))
 nn="NEWS"
 
-i=0
+i=1
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
     nn = nn+"<p>" + str(i) + "<br>" + nnn + "<br> "+ manual_testing(nnn)+ "</p>"+"<br>"
