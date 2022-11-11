@@ -37,7 +37,7 @@ print("#########################  1 #################################")
 i=0
 while i < json1["num_results"]:
     nnn = json1["results"][i]["abstract"]
-    nn=nn+"<p>"+nnn+"</p>"+"<br>"   
+    nn = nn+nnn 
     i=i+1
 
 with open('FN.json', 'w') as f:
