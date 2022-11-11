@@ -120,7 +120,7 @@ section = "world"
 url4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
 
 json1 = json.load(open_url(url4))
-
+nn="NEWS"
 
 i=0
 while i < json1["num_results"]:
