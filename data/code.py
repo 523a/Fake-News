@@ -128,7 +128,7 @@ while i < json1["num_results"]:
     print(str(manual_testing(nnn)))
     #print(manual_testing(nnn),i,nnn)
     i=i+1
-print("nn") 
+print(nn) 
 
 #str(manual_testing(nnn))   
 #div2 = js.document.createElement("div")
