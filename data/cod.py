@@ -40,9 +40,9 @@ while i < json1["num_results"]:
     nn = nn+nnn 
     i=i+1
 
-with open('FN.json', 'w') as f:
-    json.dump(nn, f)
-print((nn))   
+#with open('FN.json', 'w') as f:
+#    json.dump(nn, f)
+#print((nn))   
     
 #print("All Ok 9 !")
 #div2 = js.document.createElement("div")
