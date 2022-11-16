@@ -12,7 +12,7 @@ from pyodide.http import open_url
 import os
 from pprint import pprint
 import json
-
+import nltk
 
 apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7lNSCGfGs8')
 
