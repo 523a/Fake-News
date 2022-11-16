@@ -53,4 +53,15 @@ print("#########################  1 #################################")
 #js.document.body.append(div3)
 #div3.innerText="Какая-то строка"
 
-
+from nltk import *
+from nltk.sem.drt import DrtParser
+from nltk.sem import logic
+from nltk.sem import Expression
+read_expr = Expression.fromstring
+p1 = read_expr('all x.(животные(x) -> смертны(x))')
+p2 = read_expr('all x.(люди(x) -> животные(x))')
+c =  read_expr('all x.(люди(x) -> смертны(x))')
+prover = ResolutionProverCommand(c, [p1,p2])
+print(TableauProver().prove(c, [p1,p2]))
+print(prover.prove())
+print(prover.proof())
