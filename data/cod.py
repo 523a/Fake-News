@@ -5,7 +5,7 @@ import csv
 import js
 
 div1 = js.document.createElement("div")
-div1.innerHTML = "<h1> Json получен </h1>"
+div1.innerHTML = "<h1> Работаем с NLTK V3.7 </h1>"
 js.document.body.prepend(div1)
 
 from pyodide.http import open_url
@@ -14,15 +14,15 @@ from pprint import pprint
 import json
 import nltk
 
-apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7lNSCGfGs8')
+#apikey = os.getenv('R7F8JAZUaZUEgbei45EDdUY9X74ECHWC', 'tfInspSSsKz5HIiPy4BTVc7lNSCGfGs8')
 
 # Top Stories:
 # https://developer.nytimes.com/docs/top-stories-product/1/overview
-section = "world"
+#section = "world"
 
-url4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
+#url4 = f"https://api.nytimes.com/svc/topstories/v2/{section}.json?api-key={apikey}"
 #print(url4)
-json1 = json.load(open_url(url4))
+#json1 = json.load(open_url(url4))
 #print(json1)
 
 
@@ -34,11 +34,11 @@ nn="Hello"
 #print(json1['num_results'])
 print("#########################  1 #################################")
 
-i=1
-while i < json1["num_results"]:
-    nnn = json1["results"][i]["abstract"]
-    nn = nn+nnn 
-    i=i+1
+#i=1
+#while i < json1["num_results"]:
+#    nnn = json1["results"][i]["abstract"]
+#    nn = nn+nnn 
+#    i=i+1
 
 #with open('FN.json', 'w') as f:
 #    json.dump(nn, f)
