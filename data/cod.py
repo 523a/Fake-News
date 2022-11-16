@@ -66,3 +66,6 @@ print(TableauProver().prove(c, [p1,p2]))
 print(prover.prove())
 print(prover.proof())
 print("Ok******************")
+
+nltk.app.rdparser()
+nltk.app.rdparser()
