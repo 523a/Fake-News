@@ -67,5 +67,5 @@ print(prover.prove())
 print(prover.proof())
 
 
-nltk.app.rdparser()
+#nltk.app.rdparser() не работает
 print("Ok******************")
